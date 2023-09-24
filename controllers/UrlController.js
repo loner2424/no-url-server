@@ -45,7 +45,7 @@ async function handleRedirect(req,res){
     );
     const newurl = entry.redirectURL.toString()
     if(newurl!=null) {
-        res.redirect("https://"+ newurl);
+        res.redirect(newurl);
       }
     
 }
